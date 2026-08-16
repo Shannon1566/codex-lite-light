@@ -1,0 +1,65 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and temporary files
+*.log
+host/codex-light-watcher.log*
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Node.js
+node_modules/
+coverage/
+
+# C/C++ and embedded build systems
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+compile_commands.json
+firmware/build/
+firmware/.pio/
+firmware/.cache/
+.pio/
+.tools/
+*.elf
+*.hex
+*.bin
+*.uf2
+*.map
+
+# Debug probes and generated artifacts
+*.d
+*.o
+*.obj
+*.a

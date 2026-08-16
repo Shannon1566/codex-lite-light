@@ -1,0 +1,25 @@
+# Merge these entries into the user-level Codex config.toml and replace PROJECT_PATH.
+# Set CODEX_LIGHT_PORT in your user environment, for example COM5 on Windows.
+
+[hooks]
+
+[[hooks.SessionStart]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event SessionStart", async = true }]
+
+[[hooks.UserPromptSubmit]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event UserPromptSubmit", async = true }]
+
+[[hooks.PreToolUse]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event PreToolUse", async = true }]
+
+[[hooks.PermissionRequest]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event PermissionRequest", async = true }]
+
+[[hooks.PostToolUse]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event PostToolUse", async = true }]
+
+[[hooks.Stop]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event Stop", async = true }]
+
+[[hooks.SessionEnd]]
+hooks = [{ type = "command", commandWindows = "pwsh -NoProfile -File PROJECT_PATH/host/codex-light.ps1 -Event SessionEnd" }]
