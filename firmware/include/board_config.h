@@ -5,6 +5,16 @@
 #define CODEX_LIGHT_GPIO_YELLOW 10u
 #define CODEX_LIGHT_GPIO_RED 9u
 
+// 1.54-inch 240x240 ST7789 on the GPIOs exposed by Waveshare RP2040-Zero.
+// GPIO14/15 are the RP2040-Zero hardware SPI1 SCK/TX pins.
+#define CODEX_LIGHT_TFT_CS 13u
+#define CODEX_LIGHT_TFT_SCK 14u
+#define CODEX_LIGHT_TFT_MOSI 15u
+#define CODEX_LIGHT_TFT_DC 12u
+#define CODEX_LIGHT_TFT_RESET 26u
+#define CODEX_LIGHT_TFT_BACKLIGHT 27u
+#define CODEX_LIGHT_TFT_SPI_HZ 24000000u
+
 // Set to 0 for a common-anode module whose LEDs turn on at GPIO LOW.
 #define CODEX_LIGHT_ACTIVE_HIGH 1
 

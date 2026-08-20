@@ -63,3 +63,8 @@ firmware/.cache/
 *.o
 *.obj
 *.a
+
+# Superseded bitmap-animation experiment (the firmware renders geometry at runtime)
+firmware/assets/codex-3d-rotation-sprites.png
+firmware/include/codex_rotation_frames.h
+tools/generate_codex_frames.py
